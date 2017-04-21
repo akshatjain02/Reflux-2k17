@@ -1,0 +1,108 @@
+<div class="section" id="menu">
+
+<?php if($register_closed!=true) { ?>
+	<?php if($show_closed_message==false) { ?>
+	<h3 class="text-center section-title">Events to take part in</h3>
+	<?php } ?>
+	<?php if(!in_array("exhibition", $closed)) { ?>
+	<div class="row">
+	<a href="?section=exhibition" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Exhibition</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("workshops", $closed)) { ?>
+	<div class="row">
+	<a href="?section=workshops" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Workshops</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if($show_closed_message==false) { ?>
+	<h3 class="text-center section-title">Competitions to take part in</h3>
+	<?php } ?>
+	<?php if(!in_array("case_study", $closed)) { ?>
+	<div class="row">
+	<a href="?section=case_study" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Case study</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("quiz_enigma", $closed)) { ?>
+	<div class="row">
+	<a href="?section=quiz_enigma" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Enigma quiz</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("green_tech", $closed)) { ?>
+	<div class="row">
+	<a href="?section=green_tech" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Green Tech</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("ideation", $closed)) { ?>
+	<div class="row">
+	<a href="?section=ideation" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Ideation challenge 1.0</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("industrial_design", $closed)) { ?>
+	<div class="row">
+	<a href="?section=industrial_design" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Industrial design problem</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("paper_presentation", $closed)) { ?>
+	<div class="row">
+	<a href="?section=paper_presentation" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Paper presentation</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("photography", $closed)) { ?>
+	<div class="row">
+	<a href="?section=photography" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Photography</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("poster_presentation", $closed)) { ?>
+	<div class="row">
+	<a href="?section=poster_presentation" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Poster presentation</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if(!in_array("process_design", $closed)) { ?>
+	<div class="row">
+	<a href="?section=process_design" class="customLink">
+		<div class="hollowBtn col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">Process design problem</div>
+	</a>
+	</div>
+	<br>
+	<?php } ?>
+	<?php if($show_closed_message==true) { ?>
+	<h3 class="text-center" style="color:red;">All other registrations have closed</h3>
+	<?php } ?>
+<?php } else { ?>
+	<h3 class="text-center" style="color:red;">Registrations have ended for this year.</h3>
+	<h4 class="text-center" style="color:blue;">Do come back in the next edition of Reflux</h4>
+	<br>
+<?php } ?>
+	<h4 class="text-center">Read more about competitions <a href="../competitions/" class="customLink dotted">here</a></h4>
+	<h4 class="text-center">Read more about events <a href="../events/" class="customLink dotted">here</a></h4>
+</div>
