@@ -1,9 +1,9 @@
 <?php 
 	
    	$dbhost = "mysql.hostinger.in";
-	$dbuser = "u932729557_admin";
-	$dbpass = "Aks12345";
-	$dbname = "u932729557_main";
+	$dbuser = "";
+	$dbpass = "";
+	$dbname = "";
 
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass,$dbname);
    
